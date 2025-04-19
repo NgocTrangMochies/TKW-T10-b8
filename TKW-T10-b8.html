@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .img{
+            width:100px ;
+            height:100px;
+            transition: all 2s ease;
+        }
+
+        button{
+            border-radius: 20px;
+        } 
+    </style>
+</head>
+<body>
+    <button id="nut">Messager</button>
+    <br><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6J3Y8PuCRbl8wcjIgjx7EvLCIU_r4GSkxTA&s"
+    class="img" onmouseover="this.style.width='200px';this.style.height='200px';"
+    onmouseover="this.style.width='100px';this.style.height='100px';"
+    alt="Hình ảnh">
+    <script>
+        let nut =document.getElementById("nut");
+        nut.onclick = function () {
+            alert("Xin chào!");
+        };
+        nut.onmouseover=function(){
+            nut.style.backgroundColor="pink";
+            nut.style.color="white";
+        };
+        nut.onmouseout=function(){
+            nut.style.backgroundColor="white";
+            nut.style.color="pink";
+        };
+    </script>
+</body>
+</html>
